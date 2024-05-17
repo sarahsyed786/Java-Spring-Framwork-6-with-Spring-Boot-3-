@@ -3,7 +3,8 @@ public class Main {
 
         QuestionService s = new QuestionService();
       s.playQuiz();
-      s.checkAns();
+      s.printScore();
+     
         
 
         
