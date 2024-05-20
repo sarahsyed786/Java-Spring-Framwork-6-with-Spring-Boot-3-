@@ -1,7 +1,7 @@
 public class ExceptionHandling {
     public static void main(String[] args) {
-        int i=2;
-        //  	int i=0;
+
+              int i=20;
               int j=0;
               
               int nums[]=new int[5];
@@ -10,18 +10,16 @@ public class ExceptionHandling {
               try
               {
                   j=18/i;
-                  System.out.println(str.length());
-                  System.out.println(nums[1]);
-                  System.out.println(nums[5]);
+
+                  if(j==0){
+                    throw new ArithmeticException("can not divide by zero");
+                  }
+                 
               }
-      //    	catch(Exception e)
-      //    	{
-      //  
-      //    		System.out.println("Something went wrong."+e);
-      //    	}
               catch(ArithmeticException e)
               {
-                  System.out.println("Cannot divide by zero");
+                 j = 18/1;
+                  System.out.println("Default Answer: "+e);
               }
               catch(ArrayIndexOutOfBoundsException e)
               {
