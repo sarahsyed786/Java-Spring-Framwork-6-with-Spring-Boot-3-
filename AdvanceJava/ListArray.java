@@ -1,8 +1,5 @@
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
-
-import javax.xml.transform.Source;
 
 public class ListArray {
     public static void main(String[] args) {
